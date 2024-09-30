@@ -1,0 +1,9 @@
+spring.application.name: ereporter
+
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(%logger){cyan} %clr(:){faint} %m%n%wEx"
+
+  level:
+    root: WARN
+    nl.sling.ereporter: DEBUG
