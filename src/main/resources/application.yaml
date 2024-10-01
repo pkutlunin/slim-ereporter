@@ -1,5 +1,10 @@
 spring.application.name: ereporter
 
+server:
+  port: 3026
+  servlet:
+    context-path: /api
+
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%5p) %logger : %m%n%wEx"
@@ -9,6 +14,6 @@ logging:
     nl.sling.ereporter: DEBUG
 
 app-incident:
-  data-folder: src/test/resources/input
+  data-folder: mount
   processing-cron: 0 0 4 * * *
   processing-cron-zone: EST
