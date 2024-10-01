@@ -7,3 +7,6 @@ logging:
   level:
     root: WARN
     nl.sling.ereporter: DEBUG
+
+app-incident:
+  data-folder: src/test/resources/input
