@@ -10,3 +10,5 @@ logging:
 
 app-incident:
   data-folder: src/test/resources/input
+  processing-cron: 0 0 4 * * *
+  processing-cron-zone: EST

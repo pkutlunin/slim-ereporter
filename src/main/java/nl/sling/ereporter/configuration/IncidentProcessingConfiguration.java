@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConfigurationProperties("app-incident")
 @Data
-public class IncidentDataLocationConfiguration {
+public class IncidentProcessingConfiguration {
 
   /**
    * Folder where the input file for processing is located. The same folder is used for the output file.
@@ -29,5 +29,14 @@ public class IncidentDataLocationConfiguration {
    */
   private String outputFileName = "output.csv";
 
+  /**
+   * Cron expression when the processing should be run. Example: 0 0 1 * * MON - every Monday at 1 am.
+   */
+  private String processingCron;
+
+  /**
+   * Zone ID which specifies the zone for the cron expression . Default: "UTC".
+   */
+  private String processingCronZone = "UTC";
 
 }

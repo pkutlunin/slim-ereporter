@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Pavel Kutlunin
  */
 @SpringBootTest
+@ActiveProfiles("test")
 class IncidentProcessorTest {
 
   @Autowired
