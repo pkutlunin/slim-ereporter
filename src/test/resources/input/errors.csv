@@ -1,0 +1,8 @@
+Asset Name,Start Date,End Time ,Severity
+Wrong format for start date,20240901T23:12:32,4/1/2025 8:31,1
+Wrong format for end date,4/1/2023 8:31,20240901T23:12:32,1
+Absent dates,,,1
+Unknown severity,4/1/2023 8:31, 4/1/2024 8:32,-wr0ng-number
+
+Error after empty line,,,
+,,,1

@@ -2,7 +2,7 @@ spring.application.name: ereporter
 
 logging:
   pattern:
-    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(%logger){cyan} %clr(:){faint} %m%n%wEx"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%5p) %logger : %m%n%wEx"
 
   level:
     root: WARN

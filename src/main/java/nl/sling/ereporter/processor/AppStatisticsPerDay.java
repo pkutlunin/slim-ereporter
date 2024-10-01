@@ -1,5 +1,6 @@
 package nl.sling.ereporter.processor;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import nl.sling.ereporter.domain.AppIncidentInput;
 import nl.sling.ereporter.domain.AppIncidentStatistics;
@@ -26,7 +27,10 @@ public class AppStatisticsPerDay {
   private static final int PERCENTAGE_PRECISION = 6;
   private static final int SECONDS_IN_DAY = 24 * 60 * 60;
 
+  @Getter
   private final String appName;
+
+  @Getter
   private final LocalDate date;
 
 
@@ -36,6 +40,7 @@ public class AppStatisticsPerDay {
 
   /**
    * Add record to the statistics.
+   *
    * @param input parsed CSV input.
    */
   public void add(AppIncidentInput input) {
@@ -46,6 +51,7 @@ public class AppStatisticsPerDay {
 
   /**
    * Return the current state of aggregate statistics
+   *
    * @return Aggregated statistics of incidents for the app and date.
    */
   public AppIncidentStatistics aggregate() {
